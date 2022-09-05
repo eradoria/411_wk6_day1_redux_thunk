@@ -1,6 +1,6 @@
 // fill out this container
 import { connect } from "react-redux";
-import Import from "../components/Import";
+import Table from "../components/Table";
 import { fetchMakes, deleteMake } from "../redux/actions";
 
 const mapStateToProps = (state) => {
@@ -15,4 +15,4 @@ const mapDispatchToProps = (dispatch) => {
     deleteMake: (index) => dispatch(deleteMake(index)),
   };
 };
-export default connect(mapStateToProps, mapDispatchToProps)(Import);
+export default connect(mapStateToProps, mapDispatchToProps)(Table);

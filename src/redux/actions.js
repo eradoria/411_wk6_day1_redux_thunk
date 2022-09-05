@@ -27,5 +27,14 @@ export const fetchMakes = () => {
 
         dispatch(action);
       });
+
+      
   };
 };
+
+export const deleteMake = (index) => {
+    return {
+      type: "DELETE_MAKE",
+      value: index,
+    };
+  };
