@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Paper, Chip } from '@mui/material';
-import cars from '../cars.json' // remove this
 
 const Car = (props) => {
     const id = props.match.params.id

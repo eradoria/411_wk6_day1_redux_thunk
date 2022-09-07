@@ -15,7 +15,7 @@ const options = ["delete"];
 const ITEM_HEIGHT = 48;
 
 export default function CustomTable(props) {
-  console.log(props);
+  console.log('props are here',props);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -25,7 +25,7 @@ export default function CustomTable(props) {
     setAnchorEl(null);
   };
   const handleDelete = () => {
-    props.deleteMake();
+    props.handleDelete();
     setAnchorEl(null);
   };
 
